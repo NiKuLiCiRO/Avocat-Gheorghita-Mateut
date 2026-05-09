@@ -1,0 +1,13 @@
+:root { --primar: #121921; --accent: #c5a059; --text: #333; --alb: #ffffff; }
+body { font-family: 'Garamond', serif; margin: 0; background: #fdfdfd; color: var(--text); }
+nav { background: var(--primar); padding: 20px; text-align: center; border-bottom: 3px solid var(--accent); }
+nav a { color: var(--alb); text-decoration: none; margin: 0 15px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+nav a:hover { color: var(--accent); }
+header { background: var(--alb); text-align: center; padding: 50px 20px; border-bottom: 1px solid #eee; }
+h1 { color: var(--primar); font-size: 2.5em; margin: 0; }
+.container { max-width: 1000px; margin: 30px auto; padding: 20px; background: var(--alb); box-shadow: 0 5px 25px rgba(0,0,0,0.05); border-radius: 4px; }
+.video-wrap { position: relative; padding-bottom: 56.25%; height: 0; margin: 25px 0; border: 4px solid var(--primar); }
+.video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.img-juridic { width: 100%; max-height: 400px; object-fit: cover; border-radius: 4px; border: 1px solid #ddd; }
+footer { background: var(--primar); color: #888; text-align: center; padding: 30px; margin-top: 50px; font-size: 0.9em; }
+.btn-decont { display: inline-block; padding: 10px 20px; background: var(--accent); color: var(--primar); text-decoration: none; font-weight: bold; border-radius: 3px; }
