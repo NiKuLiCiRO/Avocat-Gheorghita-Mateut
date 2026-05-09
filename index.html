@@ -1,79 +1,19 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cabinet Avocat Mateuț</title>
-    <style>
-        /* CSS INCLUS AICI PENTRU A EVITA ERORI DE CONEXIUNE */
-        body { font-family: 'Times New Roman', serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
-        nav { background: #1a2a3a; padding: 15px; text-align: center; }
-        nav a { color: #c5a059; text-decoration: none; margin: 0 15px; font-weight: bold; cursor: pointer; }
-        .container { max-width: 900px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        header { text-align: center; padding: 40px; border-bottom: 4px solid #c5a059; background: white; }
-        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; margin: 20px 0; }
-        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-        .page { display: none; }
-        .active { display: block; }
-        footer { text-align: center; padding: 20px; background: #1a2a3a; color: white; margin-top: 50px; }
-        img { display: block; margin: 20px auto; max-width: 100%; border-radius: 8px; }
-    </style>
+    <meta charset="UTF-8"><title>Cabinet Avocat Mateuț | Profesionalism</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<nav>
-    <a onclick="showPage('acasa')">Acasă</a>
-    <a onclick="showPage('biografie')">Biografie</a>
-    <a onclick="showPage('servicii')">Servicii</a>
-    <a href="https://google.com" target="_blank" style="color: #4db8ff;">Deschide Hartă (Link Direct)</a>
-</nav>
-
-<header>
-    <h1>Cabinet Avocat Mateuț</h1>
-    <p>Prof. Univ. Dr. Gheorghiță Mateuț - Baroul Arad</p>
-</header>
-
-<div class="container">
-    <!-- PAGINA 1: ACASA -->
-    <div id="acasa" class="page active">
-        <h2>Bine ați venit</h2>
-        <p>Cabinetul nostru oferă asistență juridică de cel mai înalt nivel.</p>
-        <div class="video-container">
-            <!-- DACA IFRAME-UL ESTE BLOCAT, ACEST LINK VA APAREA CA REZERVA -->
+    <nav><a href="index.html">Acasă</a><a href="biografie.html">Biografie</a><a href="servicii.html">Servicii</a><a href="decontat.html">Decontare</a><a href="contact.html">Contact</a></nav>
+    <header><h1>Cabinet de Avocat Mateuț</h1><p>Excelență în Drept Procesual Penal</p></header>
+    <main class="container">
+        <h2>Expertiză Juridică</h2>
+        <p>Cabinetul nostru oferă soluții juridice bazate pe o vastă experiență academică și practică.</p>
+        <div class="video-wrap">
             <iframe src="https://youtube.com" frameborder="0" allowfullscreen></iframe>
         </div>
-        <p><a href="https://youtube.com" target="_blank">Click aici dacă video-ul nu se încarcă</a></p>
-    </div>
-
-    <!-- PAGINA 2: BIOGRAFIE -->
-    <div id="biografie" class="page">
-        <h2>Biografie profesională</h2>
-        <img src="https://ubbcluj.ro" alt="Prof. Mateut" onerror="this.src='https://placeholder.com'">
-        <p>Profesor Emerit al Facultății de Drept UBB Cluj.</p>
-    </div>
-
-    <!-- PAGINA 3: SERVICII -->
-    <div id="servicii" class="page">
-        <h2>Servicii Juridice</h2>
-        <ul>
-            <li>Drept Penal</li>
-            <li>Procedură Penală</li>
-            <li>Decontare onorarii conform legii.</li>
-        </ul>
-    </div>
-</div>
-
-<footer><p>&copy; 2024 Cabinet Avocat Mateuț</p></footer>
-
-<script>
-    function showPage(pageId) {
-        var pages = document.getElementsByClassName('page');
-        for (var i = 0; i < pages.length; i++) {
-            pages[i].classList.remove('active');
-        }
-        document.getElementById(pageId).classList.add('active');
-    }
-</script>
-
+    </main>
+    <footer>&copy; 2024 Cabinet Avocat Mateuț</footer>
 </body>
 </html>
